@@ -1,0 +1,391 @@
+header {
+  z-index: 999;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  padding: 12px 20px;
+}
+nav .wrap {
+  padding-right: 20px;
+}
+nav .nav_btns {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .dropdown_menu {
+  display: none;
+}
+nav.active {
+  z-index: 999;
+  animation: fadeInDown 1s;
+}
+nav.active .wrap {
+  padding: 10px 20px;
+  background-color: #efebe1;
+  border-radius: 20px;
+}
+nav.active .wrap .nav_btns .menu_btn {
+  background-color: #e3dccb;
+}
+nav.active .wrap .nav_btns .menu_btn .icon_menu {
+  background-image: url(../img/icon/icon_menu02.png);
+  background-position: 7px 14px;
+}
+nav.active .wrap .nav_btns .select_box {
+  display: none;
+}
+nav.active .wrap .dropdown_menu {
+  display: block;
+}
+nav.active .wrap .dropdown_menu ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+nav.active .wrap .dropdown_menu ul li {
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+nav.active .wrap .dropdown_menu ul li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+nav.active .wrap .dropdown_menu ul li:last-child::after {
+  display: none;
+}
+nav.active .wrap .dropdown_menu ul li a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+}
+
+#main {
+  width: 100%;
+  height: calc(100vh - 200px);
+  padding: 220px 0 0 0;
+  background: url(../img/image/main_backimg.png) no-repeat 50% 0%;
+  background-color: #f8f7f5;
+  position: relative;
+}
+#main .wrap .main_tit h1 {
+  font-family: "Shrikhand";
+  font-size: 85px;
+  line-height: 100px;
+}
+#main .main_img_wrap {
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+  height: 200px;
+  width: 100%;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+#main .main_img_wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+#section_01 {
+  padding: 150px 0px 200px;
+  margin-top: 100px;
+}
+#section_01 .section_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 4%;
+}
+#section_01 .section_wrap .img_box {
+  position: relative;
+  margin-right: 50px;
+}
+#section_01 .section_wrap .img_box .img {
+  display: flex;
+  justify-content: end;
+}
+#section_01 .section_wrap .img_box .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+#section_01 .section_wrap .img_box .skill_wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#section_01 .section_wrap .img_box .skill_wrap p {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+#section_01 .section_wrap .img_box .skill_wrap .skills ul {
+  display: flex;
+}
+#section_01 .section_wrap .img_box .skill_wrap .skills ul li .button_type_02 {
+  margin-right: 15px;
+}
+#section_01 .section_wrap .text_box {
+  margin-left: 50px;
+}
+#section_01 .section_wrap .text_box p {
+  font-size: 20px;
+  line-height: 28px;
+}
+#section_01 .section_wrap .text_box .tit {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+#section_02 {
+  padding: 100px 0px 120px 0px;
+  position: relative;
+  background-color: #f8f7f5;
+  padding: 170px 0px 200px;
+  height: 100vh;
+}
+#section_02 ul {
+  margin-bottom: 50px;
+}
+#section_02 ul li {
+  position: relative;
+}
+#section_02 ul li .main_txt {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+}
+#section_02 ul li .main_txt h3 {
+  font-family: "Shrikhand";
+  font-size: 85px;
+  line-height: 85px;
+  color: #000;
+}
+#section_02 ul li .main_txt span {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+}
+#section_02 ul li .main_img {
+  text-align: center;
+}
+#section_02 ul li .main_img .line {
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 585px;
+  height: 40px;
+  margin: 0 auto;
+}
+#section_02 ul li .main_img .line p {
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+}
+#section_02 ul li .main_img .line span {
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+}
+#section_02 ul li .main_img .img_wrap {
+  width: 100%;
+}
+#section_02 ul li .main_img .img_wrap img {
+  width: auto;
+}
+#section_02 ul li .sub_txt {
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  width: 280px;
+}
+#section_02 ul li .sub_txt p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+#section_02 ul li .sub_txt p em {
+  font-weight: 700;
+}
+#section_02 .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  opacity: 1;
+  border: 1px solid #787878;
+  background-color: #f8f7f5;
+  margin: 0 !important;
+  margin-right: 20px !important;
+}
+#section_02 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #787878;
+}
+#section_02 .swiper-pagination {
+  bottom: auto !important;
+}
+
+#section_03 .wrap .container .mains {
+  background-image: url(../img/image/section_backimg.png);
+  background-size: cover;
+  background-color: #f8f7f5;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  padding: 160px 0;
+  padding-right: 300px;
+}
+#section_03 .wrap .container .mains .content {
+  min-width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4ch;
+}
+#section_03 .wrap .container .mains .content:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10%;
+  min-width: 570px;
+}
+#section_03 .wrap .container .mains .content:first-child .main_tit h3 {
+  font-family: "Shrikhand";
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+  position: relative;
+  padding-top: 14px;
+}
+#section_03 .wrap .container .mains .content:first-child .main_tit h3::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #d6ccc2;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+}
+#section_03 .wrap .container .mains .content:first-child .main_tit p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+#section_03 .wrap .container .mains .content:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 22%;
+  width: 400px;
+  margin-top: 130px;
+  margin-right: 8%;
+}
+#section_03 .wrap .container .mains .content:not(:first-child) .img_wrap {
+  max-width: 420px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+#section_03 .wrap .container .mains .content:not(:first-child) .img_wrap img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  transition: all 0.5s;
+}
+#section_03 .wrap .container .mains .content:not(:first-child) .img_wrap img:hover {
+  transform: scale(1.1);
+}
+#section_03 .wrap .container .mains .content:not(:first-child) p {
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+  font-weight: 500;
+}
+
+footer {
+  width: 100%;
+}
+footer .contact_wrap {
+  background-color: #f8f7f5;
+  padding: 100px 0;
+}
+footer .contact_wrap .wrap {
+  border-top: 3px solid #d6ccc2;
+  border-bottom: 3px solid #d6ccc2;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer .contact_wrap .wrap .tit {
+  width: 50%;
+}
+footer .contact_wrap .wrap .tit h5 {
+  font-family: "Shrikhand";
+  font-size: 50px;
+  color: #000;
+}
+footer .contact_wrap .wrap .sub p {
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+}
+footer .contact_wrap .wrap .sub > span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 300;
+}
+footer .contact_wrap .wrap .sub .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .copyright_wrap {
+  padding: 50px 0;
+  text-align: center;
+}
+footer .copyright_wrap .wrap p {
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

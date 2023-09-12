@@ -1,0 +1,417 @@
+header {
+    z-index: 999;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    .wrap {
+        padding-right: 20px;
+    }
+    .nav_btns {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .dropdown_menu {
+        display: none;
+    }
+    &.active {
+        z-index: 999;
+        animation: fadeInDown 1s;
+        .wrap {
+            padding: 10px 20px;
+            background-color: #efebe1;
+            border-radius: 20px;
+            .nav_btns {
+                .menu_btn {
+                    background-color: #e3dccb;
+                    .icon_menu {
+                        background-image: url(../img/icon/icon_menu02.png);
+                        background-position: 7px 14px;
+                    }
+                }
+                .select_box {
+                    display: none;
+                }
+            }
+            .dropdown_menu {
+                display: block;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 40px;
+                    li {
+                        width: 180px;
+                        text-align: center;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            width: 1px;
+                            height: 13px;
+                            background-color: #000;
+                            position: absolute;
+                            right: 0;
+                            top: 7px;
+                        }
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        a {
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 300;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main {
+    width: 100%;
+    height: calc(100vh - 200px);
+    padding: 220px 0 0 0;
+    background: url(../img/image/main_backimg.png) no-repeat 50% 0%;
+    background-color: #f8f7f5;
+    position: relative;
+    .wrap {
+        .main_tit {
+            h1 {
+                font-family: 'Shrikhand';
+                font-size: 85px;
+                line-height: 100px;
+            }
+        }
+    }
+    .main_img_wrap {
+        position: absolute;
+        left: 0;
+        bottom: -200px;
+        height: 200px;
+        width: 100%;
+        transition: all 0.2s;
+        transform-origin: top;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#section_01 {
+    padding: 150px 0px 200px;
+    margin-top: 100px;
+    .section_wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 4%;
+
+        .img_box {
+            position: relative;
+            margin-right: 50px;
+            .img {
+                display: flex;
+                justify-content: end;
+                img {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    border: 1px solid #000;
+                }
+            }
+            .skill_wrap {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                p {
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #000;
+                    margin-bottom: 10px;
+                    font-weight: 300;
+                }
+                .skills {
+                    ul {
+                        display: flex;
+                        li {
+                            .button_type_02 {
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .text_box {
+            margin-left: 50px;
+            p {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .tit {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+#section_02 {
+    padding: 100px 0px 120px 0px;
+    position: relative;
+    background-color: #f8f7f5;
+    padding: 170px 0px 200px;
+    height: 100vh;
+    ul {
+        margin-bottom: 50px;
+        li {
+            position: relative;
+            .main_txt {
+                position: absolute;
+                top: 90px;
+                left: 120px;
+                h3 {
+                    font-family: 'Shrikhand';
+                    font-size: 85px;
+                    line-height: 85px;
+                    color: #000;
+                }
+                span {
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #000;
+                }
+            }
+            .main_img {
+                text-align: center;
+                .line {
+                    border: 1px solid #cccccc;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 30px;
+                    width: 585px;
+                    height: 40px;
+                    margin: 0 auto;
+                    p {
+                        font-size: 15px;
+                        line-height: 15px;
+                        color: #000;
+                    }
+                    span {
+                        font-size: 15px;
+                        line-height: 15px;
+                        color: #000;
+                    }
+                }
+                .img_wrap {
+                    width: 100%;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+            .sub_txt {
+                position: absolute;
+                top: 100px;
+                right: 70px;
+                width: 280px;
+                p {
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000;
+                    em {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        opacity: 1;
+        border: 1px solid #787878;
+        background-color: #f8f7f5;
+        margin: 0 !important;
+        margin-right: 20px !important;
+        &.swiper-pagination-bullet-active {
+            background: #787878;
+        }
+    }
+    .swiper-pagination {
+        bottom: auto !important;
+    }
+}
+
+#section_03 {
+    .wrap {
+        .container {
+            .mains {
+                background-image: url(../img/image/section_backimg.png);
+                background-size: cover;
+                background-color: #f8f7f5;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: flex;
+                position: sticky;
+                top: 0;
+                display: flex;
+                width: 100vw;
+                padding: 160px 0;
+                padding-right: 300px;
+                .content {
+                    min-width: 40vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 4ch;
+                    &:first-child {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-right: 10%;
+                        min-width: 570px;
+                        .main_tit {
+                            h3 {
+                                font-family: 'Shrikhand';
+                                font-size: 50px;
+                                line-height: 50px;
+                                color: #000;
+                                position: relative;
+                                padding-top: 14px;
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 40px;
+                                    height: 3px;
+                                    background-color: #d6ccc2;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    top: 0;
+                                }
+                            }
+                            p {
+                                font-size: 18px;
+                                line-height: 25px;
+                                color: #000;
+                            }
+                        }
+                    }
+                    &:not(:first-child) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        min-width: 22%;
+                        width: 400px;
+                        margin-top: 130px;
+                        margin-right: 8%;
+                        .img_wrap {
+                            max-width: 420px;
+                            overflow: hidden;
+                            border-radius: 50px;
+                            img {
+                                width: 100%;
+                                max-width: 420px;
+                                height: auto;
+                                display: block;
+                                transition: all 0.5s;
+                                &:hover {
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                        p {
+                            margin-top: 20px;
+                            font-size: 25px;
+                            line-height: 25px;
+                            color: #000;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    .contact_wrap {
+        background-color: #f8f7f5;
+        padding: 100px 0;
+        .wrap {
+            border-top: 3px solid #d6ccc2;
+            border-bottom: 3px solid #d6ccc2;
+            padding: 70px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .tit {
+                width: 50%;
+                h5 {
+                    font-family: 'Shrikhand';
+                    font-size: 50px;
+                    color: #000;
+                }
+            }
+            .sub {
+                p {
+                    font-size: 25px;
+                    line-height: 25px;
+                    color: #000;
+                }
+                > span {
+                    display: inline-block;
+                    margin-top: 10px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #000;
+                    font-weight: 300;
+                }
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .copyright_wrap {
+        padding: 50px 0;
+        text-align: center;
+        .wrap {
+            p {
+                font-size: 15px;
+                line-height: 15px;
+                color: #000;
+            }
+        }
+    }
+}
+
+// transition
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}

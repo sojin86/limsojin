@@ -1,0 +1,377 @@
+// Tablet(태블릿) 규격
+@media screen and (max-width: 1350px) {
+    nav {
+        padding: 12px 50px;
+    }
+    #main {
+        padding: 220px 4% 0 4%;
+    }
+    #section_01 {
+        .section_wrap {
+            .img_box {
+                .skill_wrap {
+                    .skills {
+                        ul {
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            row-gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section_02 {
+        .swiper {
+            max-width: 585px;
+            li {
+                .main_txt {
+                    display: none;
+                }
+                .sub_txt {
+                    display: none;
+                }
+            }
+        }
+        .swiper-pagination {
+            margin-top: 20px;
+        }
+    }
+}
+// ipad 세로 사이즈
+@media screen and (max-width: 820px) {
+    #main {
+        padding: 260px 10% 0 10%;
+        background: url(../img/image/m_main_backimg_01.png) no-repeat 100% 0%;
+        background-color: #f8f7f5;
+        .main_img_wrap {
+            bottom: -150px;
+            height: 150px;
+        }
+        .wrap {
+            .main_tit {
+                h1 {
+                    font-size: 60px;
+                    line-height: 75px;
+                }
+            }
+        }
+    }
+
+    #section_01 {
+        padding: 100px 0px 150px;
+        .section_wrap {
+            display: inline-block;
+            padding: 0 10%;
+            position: relative;
+            padding-bottom: 125px;
+            .text_box {
+                margin-left: 0;
+                margin-top: 35px;
+                .tit {
+                    margin-top: 15px;
+                }
+                .btn {
+                    display: flex;
+                    justify-content: right;
+                    .button_type_01 {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .img_box {
+                margin-right: 0;
+                position: initial;
+                .skill_wrap {
+                    left: 0;
+                    padding: 0 10%;
+                    .skills {
+                        ul {
+                            grid-template-columns: repeat(6, 1fr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #section_02 {
+        height: 75vh;
+    }
+
+    #section_03 {
+        .wrap {
+            .container {
+                .mains {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    padding: 160px 10%;
+                    gap: 40px 20px;
+                    .content {
+                        &:first-child {
+                            min-width: auto;
+                            margin-right: 0;
+                            grid-column: 1 / span 2;
+                            margin-bottom: 30px;
+                            .main_tit {
+                                h3 {
+                                    font-size: 40px;
+                                    line-height: 40px;
+                                }
+                                p {
+                                    margin-top: 10px;
+                                    br {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        &:not(:first-child) {
+                            width: auto;
+                            margin: 0px;
+                            .img_wrap {
+                                border-radius: 30px;
+                            }
+                            p {
+                                margin-top: 15px;
+                                font-size: 22px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .contact_wrap {
+            padding: 50px 10%;
+            .wrap {
+                display: inline-block;
+                width: 100%;
+                padding: 50px 0;
+                .tit {
+                    width: 100%;
+                    padding-bottom: 30px;
+                    h5 {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+        .copyright_wrap {
+            padding: 30px 0;
+        }
+    }
+}
+
+// mobile phone 사이즈 세로
+@media screen and (max-width: 580px) {
+    nav {
+        padding: 0px 0px;
+    }
+    #main {
+        padding: 180px 10% 0 10%;
+        background: url(../img/image/m_main_backimg_02.png) no-repeat 100% 0%;
+        background-color: #f8f7f5;
+        .main_img_wrap {
+            bottom: -100px;
+            height: 100px;
+        }
+        .wrap {
+            .main_tit {
+                h1 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+
+    #section_01 {
+        padding: 80px 0px 200px;
+        .section_wrap {
+            padding: 0px 5%;
+            .img_box {
+                .img {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .skill_wrap {
+                    padding: 0px 5%;
+                    bottom: -100px;
+                    .skills {
+                        ul {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+                    }
+                }
+            }
+            .text_box {
+                margin-top: 30px;
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                .tit {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    #section_02 {
+        height: 100vh;
+        ul {
+            padding: 0 5%;
+            li {
+                .main_img {
+                    width: calc(100% - 10%);
+                    .line {
+                        width: 100%;
+                        p {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                        span {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                    .img_wrap {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            margin-top: 0;
+        }
+    }
+
+    #section_03 {
+        .wrap {
+            .container {
+                .mains {
+                    padding: 100px 5%;
+                    gap: 30px 10px;
+                    .content {
+                        &:first-child {
+                            .main_tit {
+                                h3 {
+                                    font-size: 28px;
+                                    line-height: 30px;
+                                }
+                                p {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                    margin-top: 5px;
+                                }
+                                .btn_wrap {
+                                    .button_type_01 {
+                                        margin-top: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        &:not(:first-child) {
+                            p {
+                                margin-top: 10px;
+                                font-size: 16px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .contact_wrap {
+            padding: 50px 10%;
+            .wrap {
+                padding: 30px 0;
+                border-top: 2px solid #d6ccc2;
+                border-bottom: 2px solid #d6ccc2;
+                .tit {
+                    padding-bottom: 20px;
+                    h5 {
+                        font-size: 28px;
+                        line-height: 30px;
+                    }
+                }
+                .sub {
+                    p {
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                    span {
+                        font-size: 14px;
+                        line-height: 18px;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright_wrap {
+            padding: 20px 0;
+            .wrap {
+                P {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+
+    .button_type_01 {
+        height: 25px;
+        padding: 0px 0px 0px 15px;
+        span {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    .menu_btn {
+        width: 25px;
+        height: 25px;
+    }
+    .icon_menu {
+        width: 25px;
+        height: 25px;
+        background-size: 14px auto;
+        background-position: 6px 8px;
+    }
+    .select_box {
+        width: 110px;
+        height: 25px;
+        .label {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    .w120px {
+        width: 115px !important;
+    }
+}
+
+// 가로 모드
+@media screen and (orientation: landscape) {
+    // XR 이상의 가로 전환시 사항
+    @media screen and (max-width: 896px) {
+        body {
+            border: 1px solid darkcyan;
+        }
+    }
+}
