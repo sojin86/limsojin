@@ -6,7 +6,7 @@
         <title>main page</title>
         <link rel="stylesheet" href="../css/import.css" />
         <script src="../js/common.js"></script>
-        <script src="../js/scroll.js"></script>
+        <script src="../../js/scroll.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <style>
             body {
@@ -137,12 +137,12 @@
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <div class="main_txt">
-                                <h3>Design</h3>
+                                <h3>AIDU</h3>
                                 <span>company</span>
                             </div>
                             <div class="main_img">
                                 <div class="line">
-                                    <p>000 company</p>
+                                    <p>AIDU company</p>
                                     <span>#01</span>
                                 </div>
                                 <div class="img_wrap">
@@ -155,10 +155,10 @@
                                     기업을 소개하기 위한 웹사이트 입니다. 기존에 있던 페이지를 새롭게 퍼블리싱
                                     하였습니다. 사용자의 이목을 끌 수 있고 깔끔한 웹사이트 내용으로 제작하였습니다.
                                 </p>
-                                <button class="button_type_01 mgT30">
+                                <a href="../html/project/aidu.html" class="button_type_01 mgT30 w120px">
                                     <span>See More</span>
                                     <i class="icon_right_arrow"></i>
-                                </button>
+                                </a>
                             </div>
                         </li>
                         <li class="swiper-slide">
@@ -327,4 +327,13 @@
             </div>
         </footer>
     </body>
+    <script>
+        window.addEventListener('load', function () {
+            var main_scroll = document.querySelector('.main_img_wrap');
+            window.addEventListener('scroll', function () {
+                var value = 1 + window.scrollY / -600;
+                main_scroll.style.transform = `scaleY(${value})`;
+            });
+        });
+    </script>
 </html>

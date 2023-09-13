@@ -42,6 +42,93 @@ body {
   border-radius: 40px;
 }
 
+.not_scroll {
+  -ms-overflow-style: none;
+}
+.not_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  z-index: 999;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  padding: 12px 20px;
+}
+nav .wrap {
+  padding-right: 20px;
+}
+nav .nav_btns {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .dropdown_menu {
+  display: none;
+}
+nav.active {
+  z-index: 999;
+  animation: fadeInDown 1s;
+}
+nav.active .wrap {
+  padding: 10px 20px;
+  background-color: #efebe1;
+  border-radius: 20px;
+}
+nav.active .wrap .nav_btns .menu_btn {
+  background-color: #e3dccb;
+}
+nav.active .wrap .nav_btns .menu_btn .icon_menu {
+  background-image: url(../img/icon/icon_menu02.png);
+  background-position: 7px 14px;
+}
+nav.active .wrap .nav_btns .select_box {
+  display: none;
+}
+nav.active .wrap .dropdown_menu {
+  display: block;
+}
+nav.active .wrap .dropdown_menu ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+nav.active .wrap .dropdown_menu ul li {
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+nav.active .wrap .dropdown_menu ul li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+nav.active .wrap .dropdown_menu ul li:last-child::after {
+  display: none;
+}
+nav.active .wrap .dropdown_menu ul li a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+}
+
+.main_tit h1 {
+  font-family: "Shrikhand";
+  font-size: 85px;
+  line-height: 100px;
+  color: #000;
+}
+
 /* icon */
 .icon_arrow_r {
   display: inline-block;
@@ -81,6 +168,29 @@ body {
   background-repeat: no-repeat;
   background-size: 15px auto;
   background-position: 4px 7px;
+}
+
+.icon_a_01 {
+  display: inline-block;
+  width: 200px;
+  height: 369px;
+  background-image: url(../img/icon/icon_a_01.png);
+  background-repeat: no-repeat;
+}
+
+.icon_z_01 {
+  display: inline-block;
+  width: 200px;
+  height: 369px;
+  background-image: url(../img/icon/icon_z_01.png);
+  background-repeat: no-repeat;
+}
+
+.icon_scroll {
+  display: inline-block;
+  border: 1px solid #787878;
+  width: 15px;
+  height: 330px;
 }
 
 /* button type */
@@ -124,6 +234,18 @@ body {
   color: #000;
   vertical-align: top;
   margin-top: 4px;
+}
+
+.button_type_03 {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 60px;
+}
+.button_type_03 span {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
 }
 
 .menu_btn {
@@ -269,6 +391,17 @@ body {
   font-size: 1.375rem;
   line-height: 24px;
   color: #000;
+}
+
+.ani_updown {
+  position: relative;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.ani_updown.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* common */

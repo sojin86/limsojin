@@ -1,10 +1,4 @@
 window.addEventListener('load', function () {
-    var main_scroll = document.querySelector('.main_img_wrap');
-    window.addEventListener('scroll', function () {
-        var value = 1 + window.scrollY / -600;
-        main_scroll.style.transform = `scaleY(${value})`;
-    });
-
     // swiper function
     new Swiper('.swiper', {
         loop: true, // 슬라이드 반복 여부
@@ -22,9 +16,7 @@ window.addEventListener('load', function () {
     if (/Mobi|Android/i.test(navigator.userAgent)) {
         document.querySelector('body').classList.add('moblie');
         document.querySelector('body').classList.remove('web');
-        console.log('!11');
     } else {
-        console.log('@22');
         document.querySelector('body').classList.add('web');
         document.querySelector('body').classList.remove('moblie');
         (function () {
@@ -74,4 +66,47 @@ window.addEventListener('load', function () {
             }
         })();
     }
+
+    const bar = document.querySelector('.scoll_show');
+
+    window.onscroll = () => {
+        let winScroll = document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        let scrolled = (winScroll / height) * 100;
+        bar.style.height = scrolled + '%';
+    };
+
+    window.addEventListener('scroll', fnUpDown);
+
+    function fnUpDown() {
+        const UpDown = document.querySelectorAll('.ani_updown');
+        for (var i = 0; i < UpDown.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = UpDown[i].getBoundingClientRect().top;
+            var elementVisible = 100;
+
+            if (elementTop < windowHeight - elementVisible) {
+                UpDown[i].classList.add('active');
+            }
+        }
+    }
+
+    const tabItem = document.querySelectorAll('.section_01 .btn_wrap li');
+    const tabInner = document.querySelectorAll('.img_box');
+
+    tabItem.forEach((tab, idx) => {
+        tab.addEventListener('click', function () {
+            tabInner.forEach((inner) => {
+                inner.classList.remove('active');
+            });
+
+            tabItem.forEach((item) => {
+                item.classList.remove('active');
+            });
+
+            tabItem[idx].classList.add('active');
+            tabInner[idx].classList.add('active');
+        });
+    });
 });

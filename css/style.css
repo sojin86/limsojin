@@ -1,76 +1,3 @@
-header {
-  z-index: 999;
-  position: relative;
-}
-
-nav {
-  position: fixed;
-  top: 20px;
-  width: 100%;
-  padding: 12px 20px;
-}
-nav .wrap {
-  padding-right: 20px;
-}
-nav .nav_btns {
-  display: flex;
-  justify-content: flex-end;
-}
-nav .dropdown_menu {
-  display: none;
-}
-nav.active {
-  z-index: 999;
-  animation: fadeInDown 1s;
-}
-nav.active .wrap {
-  padding: 10px 20px;
-  background-color: #efebe1;
-  border-radius: 20px;
-}
-nav.active .wrap .nav_btns .menu_btn {
-  background-color: #e3dccb;
-}
-nav.active .wrap .nav_btns .menu_btn .icon_menu {
-  background-image: url(../img/icon/icon_menu02.png);
-  background-position: 7px 14px;
-}
-nav.active .wrap .nav_btns .select_box {
-  display: none;
-}
-nav.active .wrap .dropdown_menu {
-  display: block;
-}
-nav.active .wrap .dropdown_menu ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-nav.active .wrap .dropdown_menu ul li {
-  width: 180px;
-  text-align: center;
-  position: relative;
-}
-nav.active .wrap .dropdown_menu ul li::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 13px;
-  background-color: #000;
-  position: absolute;
-  right: 0;
-  top: 7px;
-}
-nav.active .wrap .dropdown_menu ul li:last-child::after {
-  display: none;
-}
-nav.active .wrap .dropdown_menu ul li a {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 300;
-  color: #000;
-}
-
 #main {
   width: 100%;
   height: calc(100vh - 200px);
@@ -78,11 +5,6 @@ nav.active .wrap .dropdown_menu ul li a {
   background: url(../img/image/main_backimg.png) no-repeat 50% 0%;
   background-color: #f8f7f5;
   position: relative;
-}
-#main .wrap .main_tit h1 {
-  font-family: "Shrikhand";
-  font-size: 85px;
-  line-height: 100px;
 }
 #main .main_img_wrap {
   position: absolute;
@@ -169,7 +91,7 @@ nav.active .wrap .dropdown_menu ul li a {
 #section_02 ul li .main_txt {
   position: absolute;
   top: 90px;
-  left: 120px;
+  left: 200px;
 }
 #section_02 ul li .main_txt h3 {
   font-family: "Shrikhand";
@@ -372,11 +294,183 @@ footer .contact_wrap .wrap .sub .btn {
 footer .copyright_wrap {
   padding: 50px 0;
   text-align: center;
+  background-color: #fff;
 }
 footer .copyright_wrap .wrap p {
   font-size: 15px;
   line-height: 15px;
   color: #000;
+}
+footer.type_01 .contact_wrap {
+  background-color: #efebe1;
+}
+footer.type_01 .button_type_01 {
+  background-color: #d6ccc2;
+}
+
+.project {
+  background-color: #f8f7f5;
+}
+.project main {
+  padding: 170px 0 150px 0;
+}
+.project main .wrap .main_tit {
+  text-align: center;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.project main .wrap .main_tit p {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  margin-top: 10px;
+}
+.project main .wrap .btn_wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.project .section_01 {
+  margin-top: 140px;
+  margin-bottom: 130px;
+  height: 65vh;
+  position: relative;
+}
+.project .section_01 .wrap {
+  position: relative;
+}
+.project .section_01 .wrap .content {
+  position: absolute;
+  top: -140px;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+.project .section_01 .wrap .content .tab_menu {
+  display: flex;
+  width: 100%;
+}
+.project .section_01 .wrap .content .tab_menu .show_site {
+  position: relative;
+  border: 22px solid #000;
+  border-radius: 30px;
+  width: 60%;
+  max-width: 740px;
+  height: 560px;
+  overflow-y: auto;
+  box-shadow: 0px 5px 10px 0 #757575;
+}
+.project .section_01 .wrap .content .tab_menu .show_site .img_box {
+  display: none;
+}
+.project .section_01 .wrap .content .tab_menu .show_site .img_box img {
+  width: 100%;
+}
+.project .section_01 .wrap .content .tab_menu .show_site .img_box.active {
+  display: block;
+}
+.project .section_01 .wrap .content .tab_menu .btn_wrap {
+  width: 40%;
+  padding: 100px 100px 0 50px;
+}
+.project .section_01 .wrap .content .tab_menu .btn_wrap li.active .button_type_03 {
+  background-color: #e3dccb;
+}
+.project .section_01 .wrap .content .tab_menu .btn_wrap li:nth-child(n+2) {
+  margin-top: 30px;
+}
+.project .section_01::before {
+  content: "";
+  display: inline-block;
+  background-color: #efebe1;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  border-radius: 0 100px 100px 0;
+}
+.project .section_02 {
+  position: relative;
+  padding-bottom: 400px;
+  background-color: #f8f7f5;
+}
+.project .section_02 .content {
+  position: relative;
+}
+.project .section_02 .content .video_wrap {
+  width: 100%;
+  display: inline-block;
+  margin-left: 40%;
+}
+.project .section_02 .content .video_wrap video {
+  border-radius: 80px 0 0 80px;
+  width: 60%;
+  height: 100%;
+}
+.project .section_02 .content .txt_wrap {
+  width: 100%;
+  margin-left: 40%;
+  margin-top: 40px;
+}
+.project .section_02 .content .txt_wrap ul li p {
+  font-size: 40px;
+  line-height: 60px;
+  color: #000;
+  position: relative;
+}
+.project .section_02 .content .txt_wrap ul li p::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #d6ccc2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+.project .section_02 .content .txt_wrap ul li span {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.project .section_02 .content .txt_wrap ul li:nth-child(n+2) {
+  margin-top: 100px;
+}
+.project .section_02 .letter_wrap {
+  position: absolute;
+  top: 20%;
+  right: 75%;
+}
+.project .section_02 .letter_wrap .scroll {
+  text-align: center;
+}
+.project .section_02 .letter_wrap .scoll_show {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0%;
+  overflow: hidden;
+}
+.project .section_02 .letter_wrap .scoll_show .en .icon_a_01 {
+  background-image: url(../img/icon/icon_a_02.png);
+}
+.project .section_02 .letter_wrap .scoll_show .en .icon_z_01 {
+  background-image: url(../img/icon/icon_z_02.png);
+}
+.project .section_02 .letter_wrap .scoll_show .scroll .icon_scroll {
+  background-color: #d6ccc2;
+  border: 1px solid #d6ccc2;
+}
+.project #section_03 {
+  background-color: #efebe1;
+}
+.project #section_03 .wrap .container .mains {
+  background-color: #efebe1;
+  background-image: none;
 }
 
 @keyframes fadeInDown {
