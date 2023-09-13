@@ -44,7 +44,7 @@
             .skill_wrap {
                 width: 100%;
                 position: absolute;
-                bottom: 0;
+                bottom: -30px;
                 p {
                     font-size: 16px;
                     line-height: 16px;
@@ -54,7 +54,9 @@
                 }
                 .skills {
                     ul {
-                        display: flex;
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        row-gap: 10px;
                         li {
                             .button_type_02 {
                                 margin-right: 15px;

@@ -46,7 +46,7 @@
 #section_01 .section_wrap .img_box .skill_wrap {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
 }
 #section_01 .section_wrap .img_box .skill_wrap p {
   font-size: 16px;
@@ -56,7 +56,9 @@
   font-weight: 300;
 }
 #section_01 .section_wrap .img_box .skill_wrap .skills ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
 }
 #section_01 .section_wrap .img_box .skill_wrap .skills ul li .button_type_02 {
   margin-right: 15px;
