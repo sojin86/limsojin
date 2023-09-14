@@ -79,7 +79,26 @@
 // ipad 세로 사이즈
 @media screen and (max-width: 820px) {
     nav {
-        border: 1px solid gold;
+        &.active {
+            .wrap {
+                .dropdown_menu {
+                    ul {
+                        display: inline-block;
+                        width: 100%;
+                        padding-bottom: 40px;
+                        li {
+                            width: auto;
+                            &:nth-child(n + 2) {
+                                margin-top: 20px;
+                            }
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     #main {
         padding: 260px 10% 0 10%;
@@ -298,8 +317,18 @@
 // mobile phone 사이즈 세로
 @media screen and (max-width: 580px) {
     nav {
-        padding: 0px 0px;
-        border: 1px solid red;
+        padding: 0px 5%;
+        &.active {
+            .wrap {
+                .nav_btns {
+                    .menu_btn {
+                        .icon_menu {
+                            background-position: 6px 13px;
+                        }
+                    }
+                }
+            }
+        }
     }
     #main {
         padding: 170px 5% 0 5%;
