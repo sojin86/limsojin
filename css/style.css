@@ -5,6 +5,7 @@
   background: url(../img/image/main_backimg.png) no-repeat 50% 0%;
   background-color: #f8f7f5;
   position: relative;
+  background-size: cover;
 }
 #main .main_img_wrap {
   position: absolute;
@@ -367,9 +368,11 @@ footer.type_01 .button_type_01 {
   height: 560px;
   overflow-y: auto;
   box-shadow: 0px 5px 10px 0 #757575;
+  background: #fff;
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box {
   display: none;
+  background-color: #fff;
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box img {
   width: 100%;
@@ -419,9 +422,11 @@ footer.type_01 .button_type_01 {
   height: 100%;
 }
 .project .section_02 .content .txt_wrap {
-  width: 100%;
   margin-left: 40%;
   margin-top: 40px;
+}
+.project .section_02 .content .txt_wrap ul {
+  padding-right: 20px;
 }
 .project .section_02 .content .txt_wrap ul li p {
   font-size: 40px;

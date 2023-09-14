@@ -5,6 +5,7 @@
     background: url(../img/image/main_backimg.png) no-repeat 50% 0%;
     background-color: #f8f7f5;
     position: relative;
+    background-size: cover;
     .main_img_wrap {
         position: absolute;
         left: 0;
@@ -383,8 +384,10 @@ footer {
                         height: 560px;
                         overflow-y: auto;
                         box-shadow: 0px 5px 10px 0 #757575;
+                        background: #fff;
                         .img_box {
                             display: none;
+                            background-color: #fff;
                             img {
                                 width: 100%;
                             }
@@ -442,10 +445,10 @@ footer {
                 }
             }
             .txt_wrap {
-                width: 100%;
                 margin-left: 40%;
                 margin-top: 40px;
                 ul {
+                    padding-right: 20px;
                     li {
                         p {
                             font-size: 40px;
