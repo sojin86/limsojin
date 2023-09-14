@@ -67,16 +67,6 @@ window.addEventListener('load', function () {
         })();
     }
 
-    const bar = document.querySelector('.scoll_show');
-
-    window.onscroll = () => {
-        let winScroll = document.documentElement.scrollTop;
-        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-        let scrolled = (winScroll / height) * 100;
-        bar.style.height = scrolled + '%';
-    };
-
     window.addEventListener('scroll', fnUpDown);
 
     function fnUpDown() {

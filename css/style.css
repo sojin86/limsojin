@@ -150,6 +150,9 @@
 #section_02 ul li .sub_txt p em {
   font-weight: 700;
 }
+#section_02 ul li .sub_txt .button_type_01 {
+  margin-top: 30px;
+}
 #section_02 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -217,6 +220,9 @@
   font-size: 18px;
   line-height: 25px;
   color: #000;
+}
+#section_03 .wrap .container .mains .content:first-child .main_tit .btn_wrap {
+  margin-top: 30px;
 }
 #section_03 .wrap .container .mains .content:not(:first-child) {
   display: flex;
@@ -314,7 +320,7 @@ footer.type_01 .button_type_01 {
   background-color: #f8f7f5;
 }
 .project main {
-  padding: 170px 0 150px 0;
+  padding: 170px 0 0 0;
 }
 .project main .wrap .main_tit {
   text-align: center;
@@ -333,7 +339,7 @@ footer.type_01 .button_type_01 {
   margin-top: 30px;
 }
 .project .section_01 {
-  margin-top: 140px;
+  margin-top: 300px;
   margin-bottom: 130px;
   height: 65vh;
   position: relative;
@@ -345,11 +351,11 @@ footer.type_01 .button_type_01 {
   position: absolute;
   top: -140px;
   left: 0;
-  display: flex;
   width: 100%;
 }
 .project .section_01 .wrap .content .tab_menu {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 .project .section_01 .wrap .content .tab_menu .show_site {
@@ -372,11 +378,14 @@ footer.type_01 .button_type_01 {
   display: block;
 }
 .project .section_01 .wrap .content .tab_menu .btn_wrap {
-  width: 40%;
+  width: 35%;
   padding: 100px 100px 0 50px;
 }
 .project .section_01 .wrap .content .tab_menu .btn_wrap li.active .button_type_03 {
   background-color: #e3dccb;
+}
+.project .section_01 .wrap .content .tab_menu .btn_wrap li.active .button_type_03 span {
+  font-weight: 400;
 }
 .project .section_01 .wrap .content .tab_menu .btn_wrap li:nth-child(n+2) {
   margin-top: 30px;
