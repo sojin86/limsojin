@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
         centeredSlides: true, // 가운데 정렬
         spaceBetween: 60, // 슬라이드 사이 여백
         pagination: {
-            // 슬라이드 순서 버튼 지정
+            // 슬라이드 순서 버튼 지정ㄹ
             el: '.swiper-pagination',
             clickable: true,
             type: 'bullets',
