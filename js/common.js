@@ -32,4 +32,11 @@ window.addEventListener('load', function () {
             label.parentNode.classList.add('active');
         }
     });
+
+    // 버튼 클릭 시 맨 위로 이동
+
+    const topBtn = document.querySelector('.topBtn');
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 });
