@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
     const nav = document.querySelector('nav');
     const menuBtn = document.querySelector('.menu_btn');
+    const navtxt = document.querySelectorAll('.dropdown_txt');
     const label = document.querySelector('.label');
     const options = document.querySelectorAll('.optionItem');
 
@@ -8,6 +9,12 @@ window.addEventListener('load', function () {
     menuBtn.addEventListener('click', function () {
         nav.classList.toggle('active');
     });
+    navtxt.forEach((ele) => {
+        ele.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+
     document.querySelector('body').addEventListener('click', function (e) {
         if (e.target == e.currentTarget.querySelector('.label')) {
         } else {

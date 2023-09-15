@@ -19,9 +19,57 @@ window.addEventListener('load', function () {
     } else {
         document.querySelector('body').classList.add('web');
         document.querySelector('body').classList.remove('moblie');
+        // (function () {
+        //     init();
+
+        //     function init() {
+        //         setStickyContainersSize();
+        //         bindEvents();
+        //     }
+
+        //     function bindEvents() {
+        //         window.addEventListener('wheel', wheelHandler);
+        //     }
+
+        //     function setStickyContainersSize() {
+        //         document.querySelectorAll('.container').forEach(function (container) {
+        //             const stikyContainerHeight = container.querySelector('.mains').scrollWidth;
+        //             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+        //         });
+        //     }
+
+        //     function isElementInViewport(el) {
+        //         const rect = el.getBoundingClientRect();
+        //         return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+        //     }
+
+        //     function wheelHandler(evt) {
+        //         const containerInViewPort = Array.from(document.querySelectorAll('.container')).filter(function (
+        //             container
+        //         ) {
+        //             return isElementInViewport(container);
+        //         })[0];
+
+        //         if (!containerInViewPort) {
+        //             return;
+        //         }
+
+        //         var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        //         var isPlaceHolderBelowBottom =
+        //             containerInViewPort.offsetTop + containerInViewPort.offsetHeight >
+        //             document.documentElement.scrollTop;
+        //         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+        //         if (g_canScrollHorizontally) {
+        //             containerInViewPort.querySelector('.mains').scrollLeft += evt.deltaY;
+        //         }
+        //     }
+        // })();
+
         (function () {
             init();
 
+            var g_containerInViewport;
             function init() {
                 setStickyContainersSize();
                 bindEvents();
@@ -32,8 +80,8 @@ window.addEventListener('load', function () {
             }
 
             function setStickyContainersSize() {
-                document.querySelectorAll('.container').forEach(function (container) {
-                    const stikyContainerHeight = container.querySelector('.mains').scrollWidth;
+                document.querySelectorAll('.scroll_container').forEach(function (container) {
+                    const stikyContainerHeight = container.querySelector('.container').scrollWidth;
                     container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
                 });
             }
@@ -44,7 +92,7 @@ window.addEventListener('load', function () {
             }
 
             function wheelHandler(evt) {
-                const containerInViewPort = Array.from(document.querySelectorAll('.container')).filter(function (
+                const containerInViewPort = Array.from(document.querySelectorAll('.scroll_container')).filter(function (
                     container
                 ) {
                     return isElementInViewport(container);
@@ -61,7 +109,7 @@ window.addEventListener('load', function () {
                 let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
                 if (g_canScrollHorizontally) {
-                    containerInViewPort.querySelector('.mains').scrollLeft += evt.deltaY;
+                    containerInViewPort.querySelector('.container').scrollLeft += evt.deltaY;
                 }
             }
         })();

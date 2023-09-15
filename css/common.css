@@ -205,6 +205,16 @@ nav.active .wrap .dropdown_menu ul li a {
   background-position: 4px 0px;
 }
 
+.icon_left {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon/icon_left.png);
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+  background-position: 9px 5px;
+}
+
 /* button type */
 .button_type_01 {
   display: inline-block;

@@ -33,6 +33,9 @@
   #section_02 .swiper-pagination {
     margin-top: 20px;
   }
+  #section_04 .wrap .scroll_container .container ul {
+    padding-left: 4%;
+  }
   .project main .main_tit {
     padding: 0 4%;
   }
@@ -115,36 +118,37 @@
   #section_02 {
     height: 75vh;
   }
-  #section_03 .wrap .container .mains {
+  #section_04 .wrap .scroll_container .container ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 160px 10%;
     gap: 40px 20px;
+    height: auto;
   }
-  #section_03 .wrap .container .mains .content:first-child {
+  #section_04 .wrap .scroll_container .container ul li:first-child {
     min-width: auto;
     margin-right: 0;
     grid-column: 1/span 2;
     margin-bottom: 30px;
   }
-  #section_03 .wrap .container .mains .content:first-child .main_tit h3 {
+  #section_04 .wrap .scroll_container .container ul li:first-child .main_tit h3 {
     font-size: 40px;
     line-height: 40px;
   }
-  #section_03 .wrap .container .mains .content:first-child .main_tit p {
+  #section_04 .wrap .scroll_container .container ul li:first-child .main_tit p {
     margin-top: 10px;
   }
-  #section_03 .wrap .container .mains .content:first-child .main_tit p br {
+  #section_04 .wrap .scroll_container .container ul li:first-child .main_tit p br {
     display: none;
   }
-  #section_03 .wrap .container .mains .content:not(:first-child) {
+  #section_04 .wrap .scroll_container .container ul li:not(:first-child) {
     width: auto;
     margin: 0px;
   }
-  #section_03 .wrap .container .mains .content:not(:first-child) .img_wrap {
+  #section_04 .wrap .scroll_container .container ul li:not(:first-child) .img_wrap {
     border-radius: 30px;
   }
-  #section_03 .wrap .container .mains .content:not(:first-child) p {
+  #section_04 .wrap .scroll_container .container ul li:not(:first-child) p {
     margin-top: 15px;
     font-size: 22px;
     line-height: 22px;
@@ -316,29 +320,29 @@
   #section_02 .swiper-pagination {
     margin-top: 0;
   }
-  #section_03 .wrap .container .mains {
+  #section_04 .wrap .scroll_container .container ul {
     padding: 100px 5%;
-    gap: 30px 10px;
+    gap: 30px 20px;
   }
-  #section_03 .wrap .container .mains .content:first-child .main_tit h3 {
+  #section_04 .wrap .scroll_container .container ul li:first-child .main_tit h3 {
     font-size: 28px;
     line-height: 30px;
   }
-  #section_03 .wrap .container .mains .content:first-child .main_tit p {
+  #section_04 .wrap .scroll_container .container ul li:first-child .main_tit p {
     font-size: 15px;
     line-height: 20px;
     margin-top: 5px;
   }
-  #section_03 .wrap .container .mains .content:first-child .main_tit .btn_wrap .button_type_01 {
+  #section_04 .wrap .scroll_container .container ul li:first-child .main_tit .btn_wrap .button_type_01 {
     margin-top: 15px;
   }
-  #section_03 .wrap .container .mains .content:not(:first-child) p {
+  #section_04 .wrap .scroll_container .container ul li:not(:first-child) p {
     margin-top: 10px;
     font-size: 16px;
     line-height: 16px;
   }
   footer .contact_wrap {
-    padding: 50px 5%;
+    padding: 30px 5%;
   }
   footer .contact_wrap .wrap {
     padding: 30px 0;
@@ -369,6 +373,20 @@
   footer .copyright_wrap .wrap P {
     font-size: 12px;
     line-height: 12px;
+  }
+  .project nav .wrap .before_btn {
+    width: 25px;
+    height: 25px;
+  }
+  .project nav .wrap .before_btn .icon_left {
+    background-size: 7px auto;
+    background-position: 8px 6px;
+  }
+  .project nav.active .wrap {
+    display: block;
+  }
+  .project nav.active .wrap .before {
+    display: none;
   }
   .project main .wrap .main_tit {
     padding: 0 5%;
@@ -472,5 +490,17 @@
     height: 20px;
     background-size: 12px auto;
     background-position: 5px 7px;
+  }
+  .go_top {
+    right: 20px;
+    bottom: 20px;
+  }
+  .go_top button {
+    width: 30px;
+    height: 30px;
+  }
+  .go_top button .icon_top {
+    background-size: 14px auto;
+    background-position: 5px 2px;
   }
 }

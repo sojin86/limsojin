@@ -171,93 +171,6 @@
   bottom: auto !important;
 }
 
-#section_03 .wrap .container .mains {
-  background-image: url(../img/image/section_backimg.png);
-  background-size: cover;
-  background-color: #f8f7f5;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: flex;
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 100vw;
-  padding: 160px 0;
-  padding-right: 300px;
-}
-#section_03 .wrap .container .mains .content {
-  min-width: 40vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4ch;
-}
-#section_03 .wrap .container .mains .content:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 10%;
-  min-width: 570px;
-}
-#section_03 .wrap .container .mains .content:first-child .main_tit h3 {
-  font-family: "Shrikhand";
-  font-size: 50px;
-  line-height: 50px;
-  color: #000;
-  position: relative;
-  padding-top: 14px;
-}
-#section_03 .wrap .container .mains .content:first-child .main_tit h3::before {
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: 3px;
-  background-color: #d6ccc2;
-  border-radius: 3px;
-  position: absolute;
-  top: 0;
-}
-#section_03 .wrap .container .mains .content:first-child .main_tit p {
-  font-size: 18px;
-  line-height: 25px;
-  color: #000;
-}
-#section_03 .wrap .container .mains .content:first-child .main_tit .btn_wrap {
-  margin-top: 30px;
-}
-#section_03 .wrap .container .mains .content:not(:first-child) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 22%;
-  width: 400px;
-  margin-top: 130px;
-  margin-right: 8%;
-}
-#section_03 .wrap .container .mains .content:not(:first-child) .img_wrap {
-  max-width: 420px;
-  overflow: hidden;
-  border-radius: 50px;
-}
-#section_03 .wrap .container .mains .content:not(:first-child) .img_wrap img {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  display: block;
-  transition: all 0.5s;
-}
-#section_03 .wrap .container .mains .content:not(:first-child) .img_wrap img:hover {
-  transform: scale(1.1);
-}
-#section_03 .wrap .container .mains .content:not(:first-child) p {
-  margin-top: 20px;
-  font-size: 25px;
-  line-height: 25px;
-  color: #000;
-  font-weight: 500;
-}
-
 footer {
   width: 100%;
 }
@@ -319,6 +232,18 @@ footer.type_01 .button_type_01 {
 
 .project {
   background-color: #f8f7f5;
+}
+.project nav .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.project nav .wrap .before_btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #efebe1;
+  border-radius: 50%;
+  transition: all 1s;
 }
 .project main {
   padding: 170px 0 0 0;
@@ -481,12 +406,94 @@ footer.type_01 .button_type_01 {
   background-color: #d6ccc2;
   border: 1px solid #d6ccc2;
 }
-.project #section_03 {
+.project #section_04 {
   background-color: #efebe1;
 }
-.project #section_03 .wrap .container .mains {
+.project #section_04 .wrap .scroll_container .container .ul {
   background-color: #efebe1;
   background-image: none;
+}
+
+#section_04 .wrap .scroll_container .container {
+  background-image: url(../img/image/section_backimg.png);
+  background-size: cover;
+  background-color: #f8f7f5;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+}
+#section_04 .wrap .scroll_container .container ul {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 130px;
+}
+#section_04 .wrap .scroll_container .container ul li:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 130px;
+  min-width: 570px;
+}
+#section_04 .wrap .scroll_container .container ul li:first-child .main_tit h3 {
+  font-family: "Shrikhand";
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+  position: relative;
+  padding-top: 14px;
+}
+#section_04 .wrap .scroll_container .container ul li:first-child .main_tit h3::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #d6ccc2;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+}
+#section_04 .wrap .scroll_container .container ul li:first-child .main_tit p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+#section_04 .wrap .scroll_container .container ul li:first-child .main_tit .btn_wrap {
+  margin-top: 30px;
+}
+#section_04 .wrap .scroll_container .container ul li:not(:first-child) {
+  width: 400px;
+  margin-top: 145px;
+  margin-right: 80px;
+}
+#section_04 .wrap .scroll_container .container ul li:not(:first-child) .img_wrap {
+  max-width: 420px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+#section_04 .wrap .scroll_container .container ul li:not(:first-child) .img_wrap img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  transition: all 0.5s;
+}
+#section_04 .wrap .scroll_container .container ul li:not(:first-child) .img_wrap img:hover {
+  transform: scale(1.1);
+}
+#section_04 .wrap .scroll_container .container ul li:not(:first-child) p {
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+#section_04 .wrap .scroll_container .container ul li:last-child {
+  width: 300px;
 }
 
 @keyframes fadeInDown {
