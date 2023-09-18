@@ -19,53 +19,6 @@ window.addEventListener('load', function () {
     } else {
         document.querySelector('body').classList.add('web');
         document.querySelector('body').classList.remove('moblie');
-        // (function () {
-        //     init();
-
-        //     function init() {
-        //         setStickyContainersSize();
-        //         bindEvents();
-        //     }
-
-        //     function bindEvents() {
-        //         window.addEventListener('wheel', wheelHandler);
-        //     }
-
-        //     function setStickyContainersSize() {
-        //         document.querySelectorAll('.container').forEach(function (container) {
-        //             const stikyContainerHeight = container.querySelector('.mains').scrollWidth;
-        //             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
-        //         });
-        //     }
-
-        //     function isElementInViewport(el) {
-        //         const rect = el.getBoundingClientRect();
-        //         return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
-        //     }
-
-        //     function wheelHandler(evt) {
-        //         const containerInViewPort = Array.from(document.querySelectorAll('.container')).filter(function (
-        //             container
-        //         ) {
-        //             return isElementInViewport(container);
-        //         })[0];
-
-        //         if (!containerInViewPort) {
-        //             return;
-        //         }
-
-        //         var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
-        //         var isPlaceHolderBelowBottom =
-        //             containerInViewPort.offsetTop + containerInViewPort.offsetHeight >
-        //             document.documentElement.scrollTop;
-        //         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
-
-        //         if (g_canScrollHorizontally) {
-        //             containerInViewPort.querySelector('.mains').scrollLeft += evt.deltaY;
-        //         }
-        //     }
-        // })();
-
         (function () {
             init();
 
@@ -115,8 +68,8 @@ window.addEventListener('load', function () {
         })();
     }
 
+    // animation 추가 위로 올라오기
     window.addEventListener('scroll', fnUpDown);
-
     function fnUpDown() {
         const UpDown = document.querySelectorAll('.ani_updown');
         for (var i = 0; i < UpDown.length; i++) {
@@ -130,15 +83,18 @@ window.addEventListener('load', function () {
         }
     }
 
+    // ptoject tablet 버튼 클릭시 이미지 변경
     const tabItem = document.querySelectorAll('.section_01 .btn_wrap li');
     const tabInner = document.querySelectorAll('.img_box');
+    const tabWrap = document.querySelector('.show_site ');
 
     tabItem.forEach((tab, idx) => {
         tab.addEventListener('click', function () {
+            tabWrap.scrollTo({ top: 0 });
+
             tabInner.forEach((inner) => {
                 inner.classList.remove('active');
             });
-
             tabItem.forEach((item) => {
                 item.classList.remove('active');
             });

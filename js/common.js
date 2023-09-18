@@ -14,7 +14,6 @@ window.addEventListener('load', function () {
             nav.classList.remove('active');
         });
     });
-
     document.querySelector('body').addEventListener('click', function (e) {
         if (e.target == e.currentTarget.querySelector('.label')) {
         } else {
