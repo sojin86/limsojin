@@ -6,10 +6,14 @@ window.addEventListener('load', function () {
         centeredSlides: true, // 가운데 정렬
         spaceBetween: 60, // 슬라이드 사이 여백
         pagination: {
-            // 슬라이드 순서 버튼 지정ㄹ
+            // 슬라이드 순서 버튼 지정
             el: '.swiper-pagination',
             clickable: true,
             type: 'bullets',
+        },
+        autoplay: {
+            // 자동슬라이드
+            delay: 3500, // 시간
         },
     });
 
@@ -84,9 +88,9 @@ window.addEventListener('load', function () {
     }
 
     // ptoject tablet 버튼 클릭시 이미지 변경
+    const tabWrap = document.querySelector('.show_site ');
     const tabItem = document.querySelectorAll('.section_01 .btn_wrap li');
     const tabInner = document.querySelectorAll('.img_box');
-    const tabWrap = document.querySelector('.show_site ');
 
     tabItem.forEach((tab, idx) => {
         tab.addEventListener('click', function () {
@@ -95,12 +99,12 @@ window.addEventListener('load', function () {
             tabInner.forEach((inner) => {
                 inner.classList.remove('active');
             });
+            tabInner[idx].classList.add('active');
+
             tabItem.forEach((item) => {
                 item.classList.remove('active');
             });
-
             tabItem[idx].classList.add('active');
-            tabInner[idx].classList.add('active');
         });
     });
 });
