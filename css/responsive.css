@@ -42,9 +42,6 @@
   .project .section_01 .wrap .content .tab_menu .show_site {
     width: 50%;
   }
-  .project .section_01 .wrap .content .tab_menu .btn_wrap {
-    padding: 100px 40px 0 40px;
-  }
   .project .section_02 .letter_wrap {
     top: 5%;
     right: 70%;
@@ -176,6 +173,9 @@
     width: auto;
     max-width: none;
     height: 500px;
+  }
+  .project .section_01 .wrap .content .tab_menu .show_moblie {
+    display: none;
   }
   .project .section_01 .wrap .content .tab_menu .btn_wrap {
     width: auto;

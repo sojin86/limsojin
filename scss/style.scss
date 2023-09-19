@@ -304,6 +304,29 @@ footer {
                         overflow-y: auto;
                         box-shadow: 0px 5px 10px 0 #757575;
                         background: #fff;
+                        margin-right: 5%;
+                        .img_box {
+                            display: none;
+                            background-color: #000;
+                            img {
+                                width: 100%;
+                            }
+                            &.active {
+                                display: block;
+                            }
+                        }
+                    }
+                    .show_moblie {
+                        position: absolute;
+                        bottom: -35px;
+                        right: 38%;
+                        border: 10px solid #000;
+                        border-radius: 20px;
+                        max-width: 180px;
+                        height: 365px;
+                        overflow-y: auto;
+                        box-shadow: 0px 5px 10px 0 #757575;
+                        background: #fff;
                         .img_box {
                             display: none;
                             background-color: #000;

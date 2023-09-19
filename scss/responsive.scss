@@ -73,9 +73,6 @@
                         .show_site {
                             width: 50%;
                         }
-                        .btn_wrap {
-                            padding: 100px 40px 0 40px;
-                        }
                     }
                 }
             }
@@ -252,6 +249,9 @@
                             width: auto;
                             max-width: none;
                             height: 500px;
+                        }
+                        .show_moblie {
+                            display: none;
                         }
                         .btn_wrap {
                             width: auto;

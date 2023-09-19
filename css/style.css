@@ -294,6 +294,7 @@ footer.type_01 .button_type_01 {
   overflow-y: auto;
   box-shadow: 0px 5px 10px 0 #757575;
   background: #fff;
+  margin-right: 5%;
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box {
   display: none;
@@ -303,6 +304,28 @@ footer.type_01 .button_type_01 {
   width: 100%;
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box.active {
+  display: block;
+}
+.project .section_01 .wrap .content .tab_menu .show_moblie {
+  position: absolute;
+  bottom: -35px;
+  right: 38%;
+  border: 10px solid #000;
+  border-radius: 20px;
+  max-width: 180px;
+  height: 365px;
+  overflow-y: auto;
+  box-shadow: 0px 5px 10px 0 #757575;
+  background: #fff;
+}
+.project .section_01 .wrap .content .tab_menu .show_moblie .img_box {
+  display: none;
+  background-color: #000;
+}
+.project .section_01 .wrap .content .tab_menu .show_moblie .img_box img {
+  width: 100%;
+}
+.project .section_01 .wrap .content .tab_menu .show_moblie .img_box.active {
   display: block;
 }
 .project .section_01 .wrap .content .tab_menu .btn_wrap {
