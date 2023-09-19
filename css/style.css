@@ -254,7 +254,7 @@ footer.type_01 .button_type_01 {
   margin: 0 auto;
 }
 .project main .wrap .main_tit p {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   color: #000;
   margin-top: 10px;
@@ -297,7 +297,7 @@ footer.type_01 .button_type_01 {
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box {
   display: none;
-  background-color: #fff;
+  background-color: #000;
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box img {
   width: 100%;
