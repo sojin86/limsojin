@@ -298,7 +298,6 @@ footer.type_01 .button_type_01 {
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box {
   display: none;
-  background-color: #000;
 }
 .project .section_01 .wrap .content .tab_menu .show_site .img_box img {
   width: 100%;
@@ -368,6 +367,7 @@ footer.type_01 .button_type_01 {
   border-radius: 80px 0 0 80px;
   width: 60%;
   height: 100%;
+  border: 1px solid #f8f7f5;
 }
 .project .section_02 .content .txt_wrap {
   margin-left: 40%;
