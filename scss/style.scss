@@ -307,7 +307,6 @@ footer {
                         margin-right: 5%;
                         .img_box {
                             display: none;
-                            background-color: #000;
                             img {
                                 width: 100%;
                             }
@@ -383,6 +382,7 @@ footer {
                     border-radius: 80px 0 0 80px;
                     width: calc(100% - 40%);
                     height: 100%;
+                    border: 1px solid #f8f7f5;
                 }
             }
             .txt_wrap {

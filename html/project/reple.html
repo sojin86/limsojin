@@ -215,13 +215,27 @@
     </body>
     <script>
         window.onscroll = () => {
+            // A-Z COLOR
             const bar = document.querySelector('.scoll_show');
-
             let winScroll = document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
             let scrolled = (winScroll / height) * 100;
             bar.style.height = scrolled + '%';
+
+            // iphone image
+            const tabItem = document.querySelectorAll('.section_01 .btn_wrap li');
+            const mtabWrap = document.querySelector('.show_moblie');
+            const mtabInner = document.querySelectorAll('.show_moblie .img_box');
+            tabItem.forEach((tab, idx) => {
+                tab.addEventListener('click', function () {
+                    mtabWrap.scrollTo({ top: 0 });
+
+                    mtabInner.forEach((item) => {
+                        item.classList.remove('active');
+                    });
+                    mtabInner[idx].classList.add('active');
+                });
+            });
         };
     </script>
 </html>

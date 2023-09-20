@@ -89,15 +89,12 @@ window.addEventListener('load', function () {
 
     // ptoject tablet 버튼 클릭시 이미지 변경
     const tabWrap = document.querySelector('.show_site');
-    const mtabWrap = document.querySelector('.show_moblie');
     const tabItem = document.querySelectorAll('.section_01 .btn_wrap li');
     const tabInner = document.querySelectorAll('.show_site .img_box');
-    const mtabInner = document.querySelectorAll('.show_moblie .img_box');
 
     tabItem.forEach((tab, idx) => {
         tab.addEventListener('click', function () {
             tabWrap.scrollTo({ top: 0 });
-            mtabWrap.scrollTo({ top: 0 });
 
             tabInner.forEach((inner) => {
                 inner.classList.remove('active');
@@ -108,11 +105,6 @@ window.addEventListener('load', function () {
                 item.classList.remove('active');
             });
             tabItem[idx].classList.add('active');
-
-            mtabInner.forEach((item) => {
-                item.classList.remove('active');
-            });
-            mtabInner[idx].classList.add('active');
         });
     });
 });
