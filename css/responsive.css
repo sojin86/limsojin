@@ -17,18 +17,7 @@
     display: none;
   }
   #section_02 .swiper li .sub_txt {
-    width: auto;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    right: auto;
-    top: auto;
-  }
-  #section_02 .swiper li .sub_txt p {
     display: none;
-  }
-  #section_02 .swiper li .sub_txt a {
-    box-shadow: 0px 2px 10px 0 #a7a4a4;
   }
   #section_02 .swiper-pagination {
     margin-top: 20px;

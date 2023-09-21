@@ -155,7 +155,7 @@
 #section_02 ul li .sub_txt .button_type_01 {
   margin-top: 30px;
 }
-#section_02 .swiper-pagination-bullet {
+#section_02 .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   text-align: center;
@@ -163,10 +163,13 @@
   border: 1px solid #787878;
   background-color: #f8f7f5;
   margin: 0 !important;
-  margin-right: 20px !important;
+  bottom: auto !important;
 }
-#section_02 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+#section_02 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #787878;
+}
+#section_02 .swiper-pagination .swiper-pagination-bullet:nth-child(n+2) {
+  margin-left: 20px !important;
 }
 #section_02 .swiper-pagination {
   bottom: auto !important;
@@ -200,10 +203,11 @@ footer .contact_wrap .wrap .sub p {
   font-size: 25px;
   line-height: 25px;
   color: #000;
+  text-decoration: underline;
 }
 footer .contact_wrap .wrap .sub > span {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 18px;
   line-height: 24px;
   color: #000;
