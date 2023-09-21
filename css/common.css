@@ -10,6 +10,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   overflow-x: hidden;
+  word-break: keep-all;
 }
 
 /* 드래그 방지 */

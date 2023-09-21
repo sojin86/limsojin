@@ -429,6 +429,48 @@ footer.type_01 .button_type_01 {
   background-color: #d6ccc2;
   border: 1px solid #d6ccc2;
 }
+.project .section_03 {
+  padding-bottom: 200px;
+}
+.project .section_03 ul {
+  margin-top: 150px;
+}
+.project .section_03 ul li .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project .section_03 ul li .content .img_wrap img {
+  height: 460px;
+  border-radius: 100px;
+}
+.project .section_03 ul li .content .txt_wrap {
+  text-align: center;
+  margin-left: 65px;
+}
+.project .section_03 ul li .content .txt_wrap > p {
+  font-size: 30px;
+  color: #000;
+  line-height: 30px;
+}
+.project .section_03 ul li .content .txt_wrap > span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+  font-weight: 300;
+}
+.project .section_03 ul li .content .txt_wrap .btn_wrap {
+  margin-top: 40px;
+}
+.project .section_03 ul li:nth-child(n+2) {
+  margin-top: 150px;
+}
+.project .section_03 ul li:nth-child(2n) .txt_wrap {
+  margin-left: 0px;
+  margin-right: 65px;
+}
 .project #section_04 {
   background-color: #efebe1;
 }
