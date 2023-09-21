@@ -55,3 +55,11 @@
     src: url(../font/Shrikhand-Regular.woff2) format('woff2'), url(../font/Shrikhand-Regular.woff) format('woff'),
         url(../font/Shrikhand-Regular.eot) format('eot'), url(../font/Shrikhand-Regular.ttf) format('ttf');
 }
+
+@font-face {
+    font-family: 'Bagel';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/BagelFatOne-Regular.woff2) format('woff2'), url(../font/BagelFatOne-Regular.woff) format('woff'),
+        url(../font/BagelFatOne-Regular.eot) format('eot'), url(../font/BagelFatOne-Regular.ttf) format('ttf');
+}

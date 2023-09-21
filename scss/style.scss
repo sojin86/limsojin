@@ -96,7 +96,7 @@
             .main_txt {
                 position: absolute;
                 top: 90px;
-                left: 200px;
+                left: 80px;
                 h3 {
                     font-family: 'Shrikhand';
                     font-size: 85px;
@@ -104,6 +104,7 @@
                     color: #000;
                 }
                 span {
+                    display: inline-block;
                     font-size: 30px;
                     line-height: 30px;
                     color: #000;

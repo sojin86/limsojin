@@ -94,7 +94,7 @@
 #section_02 ul li .main_txt {
   position: absolute;
   top: 90px;
-  left: 200px;
+  left: 80px;
 }
 #section_02 ul li .main_txt h3 {
   font-family: "Shrikhand";
@@ -103,6 +103,7 @@
   color: #000;
 }
 #section_02 ul li .main_txt span {
+  display: inline-block;
   font-size: 30px;
   line-height: 30px;
   color: #000;
