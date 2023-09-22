@@ -42,7 +42,7 @@
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 1px solid #000;
+  object-fit: cover;
 }
 #section_01 .section_wrap .img_box .skill_wrap {
   width: 100%;
@@ -249,6 +249,14 @@ footer.type_01 .button_type_01 {
   background-color: #efebe1;
   border-radius: 50%;
   transition: all 1s;
+}
+.project nav.active .wrap {
+  display: block;
+}
+.project nav.active .wrap .nav_btns .menu_btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 .project main {
   padding: 170px 0 0 0;
@@ -506,7 +514,7 @@ footer.type_01 .button_type_01 {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 130px;
-  min-width: 570px;
+  width: 700px;
 }
 #section_04 .wrap .scroll_container .container ul li:first-child .main_tit h3 {
   font-family: "Shrikhand";

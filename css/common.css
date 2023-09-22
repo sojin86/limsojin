@@ -10,7 +10,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   overflow-x: hidden;
-  word-break: keep-all;
+  word-break: break-all;
 }
 
 /* 드래그 방지 */
@@ -63,6 +63,7 @@ nav {
 }
 nav .wrap {
   padding-right: 20px;
+  position: relative;
 }
 nav .nav_btns {
   display: flex;
@@ -380,12 +381,16 @@ nav.active .wrap .dropdown_menu ul li a {
   transition: 0.3s ease-in;
 }
 .select_box .optionList li {
-  padding: 6px 15px;
   transition: 0.1s;
   font-size: 15px;
   line-height: 15px;
   color: #000;
   font-weight: 300;
+}
+.select_box .optionList li a {
+  padding: 6px 15px;
+  display: inline-block;
+  width: 100%;
 }
 .select_box .optionList li:hover {
   background: #e3dccb;
