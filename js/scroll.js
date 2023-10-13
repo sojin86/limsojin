@@ -26,7 +26,6 @@ window.addEventListener('load', function () {
         (function () {
             init();
 
-            var g_containerInViewport;
             function init() {
                 setStickyContainersSize();
                 bindEvents();
@@ -40,6 +39,7 @@ window.addEventListener('load', function () {
                 document.querySelectorAll('.scroll_container').forEach(function (container) {
                     const stikyContainerHeight = container.querySelector('.container').scrollWidth;
                     container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+                    console.log(stikyContainerHeight);
                 });
             }
 

@@ -478,8 +478,10 @@
                     ul {
                         padding: 100px 5%;
                         gap: 30px 20px;
+                        width: 100%;
                         li {
                             &:first-child {
+                                width: 100%;
                                 .main_tit {
                                     h3 {
                                         font-size: 28px;
