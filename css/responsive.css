@@ -106,7 +106,7 @@
     padding: 0 10%;
   }
   #section_01 .section_wrap .img_box .skill_wrap .skills ul {
-    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
   }
   #section_02 {
     height: 75vh;
